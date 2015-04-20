@@ -52,8 +52,9 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Password Incorrecto" message:@"El Password es incorrecto." delegate:self cancelButtonTitle:@"Despedir" otherButtonTitles:nil];
         [alert show];
 
-    }/*
-    
+    }
+}/*
+  
     NSInteger success = 0;
     @try {
         
@@ -137,13 +138,13 @@
     [alertView show];
 }
 */
-}
+
 
 
 - (IBAction)facebookButton:(id)sender {
- //   [self facebookLogin];
+    [self facebookLogin];
     
-}/*
+}
 -(void) facebookLogin{
     [FBSession openActiveSessionWithReadPermissions:@[@"email",@"public_profile"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState state, NSError *error){
         if (error){
@@ -161,8 +162,8 @@
 
 -(void) doRegisterWithFacebookUser: (NSDictionary<FBGraphUser>*) user{
     
-   /* NSMutableDictionary * params = [[NSMutableDictionary alloc] initWithDictionary: @{@"name":user.name, @"lastname":user.last_name, @"email":[user objectForKey:@"email"], @"fb_id":user.objectID}];
-    
+  NSMutableDictionary * params = [[NSMutableDictionary alloc] initWithDictionary: @{@"name":user.name, @"lastname":user.last_name, @"email":[user objectForKey:@"email"], @"fb_id":user.objectID}];
+    /*
     [[DGFAPIClient sharedClient] POST:@"register" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"response: %@", responseObject);
         
@@ -179,7 +180,7 @@
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"error: %@", error);
     
-}];
+}];*/
 }
 -(void) doFacebookLoginWithUser: (NSDictionary<FBGraphUser>*) user{
     
@@ -196,8 +197,8 @@
         NSLog(@"error: %@", error.description);
     }];
     
-  
-}*/
+ */
+}
 
 
 @end

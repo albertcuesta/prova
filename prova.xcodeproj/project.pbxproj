@@ -49,6 +49,8 @@
 		50E31C9D1AE3C33900547803 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31C9C1AE3C33900547803 /* AppMainViewController.m */; };
 		50E31D931AE4F35000547803 /* mbMysqlDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31D921AE4F35000547803 /* mbMysqlDB.m */; };
 		50E31D961AE4F4BA00547803 /* mbMysqlQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31D951AE4F4BA00547803 /* mbMysqlQuery.m */; };
+		50E31E181AE555C500547803 /* libPods-Facebook-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E31E171AE555C500547803 /* libPods-Facebook-iOS-SDK.a */; };
+		50E31E1A1AE556C600547803 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E31E191AE556C600547803 /* libsqlite3.0.dylib */; };
 		842340B55983D8AF164A47E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F48697E7CDDFC308F6C2BD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,27 @@
 		50AF8FF51AB73F3F00A7C0F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50AF8FAA1AB73F3F00A7C0F4 /* TouchJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 453111B10A64EDBB00A970C2;
+			remoteInfo = Demo;
+		};
+		50E31E0D1AE5556600547803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E31D9E1AE5556500547803 /* JSONBenchmarking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = JSONBenchmark;
+		};
+		50E31E121AE5556600547803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E31DC91AE5556500547803 /* TouchJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45B15E110947D97B00AE66EB;
+			remoteInfo = UnitTests;
+		};
+		50E31E141AE5556600547803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E31DC91AE5556500547803 /* TouchJSON.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 453111B10A64EDBB00A970C2;
 			remoteInfo = Demo;
@@ -303,6 +326,108 @@
 		50E31D921AE4F35000547803 /* mbMysqlDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbMysqlDB.m; sourceTree = "<group>"; };
 		50E31D941AE4F4BA00547803 /* mbMysqlQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbMysqlQuery.h; sourceTree = "<group>"; };
 		50E31D951AE4F4BA00547803 /* mbMysqlQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbMysqlQuery.m; sourceTree = "<group>"; };
+		50E31D9B1AE5556500547803 /* BSJSON_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSJSON_Test.m; sourceTree = "<group>"; };
+		50E31D9C1AE5556500547803 /* JSONBenchmarking.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JSONBenchmarking.1; sourceTree = "<group>"; };
+		50E31D9D1AE5556500547803 /* JSONBenchmarking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONBenchmarking.m; sourceTree = "<group>"; };
+		50E31D9E1AE5556500547803 /* JSONBenchmarking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = JSONBenchmarking.xcodeproj; sourceTree = "<group>"; };
+		50E31DA11AE5556500547803 /* JSONBenchmarking_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONBenchmarking_Prefix.pch; sourceTree = "<group>"; };
+		50E31DA21AE5556500547803 /* load.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = load.py; sourceTree = "<group>"; };
+		50E31DA31AE5556500547803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50E31DA41AE5556500547803 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		50E31DA51AE5556500547803 /* random_json.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = random_json.py; sourceTree = "<group>"; };
+		50E31DA61AE5556500547803 /* SbrautasetJSON_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SbrautasetJSON_Test.m; sourceTree = "<group>"; };
+		50E31DA81AE5556500547803 /* load.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = load.py; sourceTree = "<group>"; };
+		50E31DA91AE5556500547803 /* random_json.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = random_json.py; sourceTree = "<group>"; };
+		50E31DAB1AE5556500547803 /* 1439636.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1439636.json; sourceTree = "<group>"; };
+		50E31DAC1AE5556500547803 /* 6229615.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 6229615.json; sourceTree = "<group>"; };
+		50E31DAD1AE5556500547803 /* TouchJSON_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchJSON_Test.m; sourceTree = "<group>"; };
+		50E31DAF1AE5556500547803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50E31DB01AE5556500547803 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		50E31DB11AE5556500547803 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		50E31DB31AE5556500547803 /* CDataScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		50E31DB41AE5556500547803 /* CDataScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		50E31DB61AE5556500547803 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		50E31DB71AE5556500547803 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		50E31DB81AE5556500547803 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		50E31DB91AE5556500547803 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		50E31DBA1AE5556500547803 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		50E31DBB1AE5556500547803 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		50E31DBC1AE5556500547803 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		50E31DBD1AE5556500547803 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		50E31DBF1AE5556500547803 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		50E31DC01AE5556500547803 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		50E31DC11AE5556500547803 /* CJSONDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		50E31DC21AE5556500547803 /* CJSONDeserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		50E31DC31AE5556500547803 /* CJSONScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		50E31DC41AE5556500547803 /* CJSONScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		50E31DC51AE5556500547803 /* CJSONSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		50E31DC61AE5556500547803 /* CJSONSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		50E31DC71AE5556500547803 /* CSerializedJSONData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		50E31DC81AE5556500547803 /* CSerializedJSONData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
+		50E31DC91AE5556500547803 /* TouchJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TouchJSON.xcodeproj; sourceTree = "<group>"; };
+		50E31DCD1AE5556500547803 /* Blake.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Blake.json; sourceTree = "<group>"; };
+		50E31DCE1AE5556500547803 /* CDataScanner_UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDataScanner_UnitTests.h; sourceTree = "<group>"; };
+		50E31DCF1AE5556500547803 /* CDataScanner_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_UnitTests.m; sourceTree = "<group>"; };
+		50E31DD01AE5556500547803 /* CJSONDeserializer_UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer_UnitTests.h; sourceTree = "<group>"; };
+		50E31DD11AE5556500547803 /* CJSONDeserializer_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer_UnitTests.m; sourceTree = "<group>"; };
+		50E31DD21AE5556500547803 /* CJSONScanner_UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONScanner_UnitTests.h; sourceTree = "<group>"; };
+		50E31DD31AE5556500547803 /* CJSONScanner_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner_UnitTests.m; sourceTree = "<group>"; };
+		50E31DD41AE5556500547803 /* CJSONSerializer_UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer_UnitTests.h; sourceTree = "<group>"; };
+		50E31DD51AE5556500547803 /* CJSONSerializer_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer_UnitTests.m; sourceTree = "<group>"; };
+		50E31DD61AE5556500547803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E31DD81AE5556500547803 /* ex1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ex1.json; sourceTree = "<group>"; };
+		50E31DD91AE5556500547803 /* ex1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex1.plist; sourceTree = "<group>"; };
+		50E31DDA1AE5556500547803 /* ex2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ex2.json; sourceTree = "<group>"; };
+		50E31DDB1AE5556500547803 /* ex2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex2.plist; sourceTree = "<group>"; };
+		50E31DDC1AE5556500547803 /* ex3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ex3.json; sourceTree = "<group>"; };
+		50E31DDD1AE5556500547803 /* ex3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex3.plist; sourceTree = "<group>"; };
+		50E31DDE1AE5556500547803 /* ex4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ex4.json; sourceTree = "<group>"; };
+		50E31DDF1AE5556500547803 /* ex4.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex4.plist; sourceTree = "<group>"; };
+		50E31DE01AE5556500547803 /* ex5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ex5.json; sourceTree = "<group>"; };
+		50E31DE21AE5556500547803 /* fail1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail1.json; sourceTree = "<group>"; };
+		50E31DE31AE5556500547803 /* fail10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail10.json; sourceTree = "<group>"; };
+		50E31DE41AE5556500547803 /* fail11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail11.json; sourceTree = "<group>"; };
+		50E31DE51AE5556500547803 /* fail12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail12.json; sourceTree = "<group>"; };
+		50E31DE61AE5556500547803 /* fail13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail13.json; sourceTree = "<group>"; };
+		50E31DE71AE5556500547803 /* fail14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail14.json; sourceTree = "<group>"; };
+		50E31DE81AE5556500547803 /* fail15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail15.json; sourceTree = "<group>"; };
+		50E31DE91AE5556600547803 /* fail16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail16.json; sourceTree = "<group>"; };
+		50E31DEA1AE5556600547803 /* fail17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail17.json; sourceTree = "<group>"; };
+		50E31DEB1AE5556600547803 /* fail18.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail18.json; sourceTree = "<group>"; };
+		50E31DEC1AE5556600547803 /* fail19.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail19.json; sourceTree = "<group>"; };
+		50E31DED1AE5556600547803 /* fail2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail2.json; sourceTree = "<group>"; };
+		50E31DEE1AE5556600547803 /* fail20.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail20.json; sourceTree = "<group>"; };
+		50E31DEF1AE5556600547803 /* fail21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail21.json; sourceTree = "<group>"; };
+		50E31DF01AE5556600547803 /* fail22.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail22.json; sourceTree = "<group>"; };
+		50E31DF11AE5556600547803 /* fail23.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail23.json; sourceTree = "<group>"; };
+		50E31DF21AE5556600547803 /* fail24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail24.json; sourceTree = "<group>"; };
+		50E31DF31AE5556600547803 /* fail25.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail25.json; sourceTree = "<group>"; };
+		50E31DF41AE5556600547803 /* fail26.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail26.json; sourceTree = "<group>"; };
+		50E31DF51AE5556600547803 /* fail27.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail27.json; sourceTree = "<group>"; };
+		50E31DF61AE5556600547803 /* fail28.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail28.json; sourceTree = "<group>"; };
+		50E31DF71AE5556600547803 /* fail29.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail29.json; sourceTree = "<group>"; };
+		50E31DF81AE5556600547803 /* fail3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail3.json; sourceTree = "<group>"; };
+		50E31DF91AE5556600547803 /* fail30.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail30.json; sourceTree = "<group>"; };
+		50E31DFA1AE5556600547803 /* fail31.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail31.json; sourceTree = "<group>"; };
+		50E31DFB1AE5556600547803 /* fail32.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail32.json; sourceTree = "<group>"; };
+		50E31DFC1AE5556600547803 /* fail33.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail33.json; sourceTree = "<group>"; };
+		50E31DFD1AE5556600547803 /* fail4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail4.json; sourceTree = "<group>"; };
+		50E31DFE1AE5556600547803 /* fail5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail5.json; sourceTree = "<group>"; };
+		50E31DFF1AE5556600547803 /* fail6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail6.json; sourceTree = "<group>"; };
+		50E31E001AE5556600547803 /* fail7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail7.json; sourceTree = "<group>"; };
+		50E31E011AE5556600547803 /* fail8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail8.json; sourceTree = "<group>"; };
+		50E31E021AE5556600547803 /* fail9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fail9.json; sourceTree = "<group>"; };
+		50E31E031AE5556600547803 /* pass1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pass1.json; sourceTree = "<group>"; };
+		50E31E041AE5556600547803 /* pass2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pass2.json; sourceTree = "<group>"; };
+		50E31E051AE5556600547803 /* pass3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pass3.json; sourceTree = "<group>"; };
+		50E31E061AE5556600547803 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		50E31E071AE5556600547803 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		50E31E081AE5556600547803 /* rfc4627a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rfc4627a.json; sourceTree = "<group>"; };
+		50E31E091AE5556600547803 /* rfc4627a.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = rfc4627a.plist; sourceTree = "<group>"; };
+		50E31E0A1AE5556600547803 /* rfc4627b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rfc4627b.json; sourceTree = "<group>"; };
+		50E31E0B1AE5556600547803 /* rfc4627b.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = rfc4627b.plist; sourceTree = "<group>"; };
+		50E31E171AE555C500547803 /* libPods-Facebook-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Facebook-iOS-SDK.a"; path = "Pods/build/Debug-iphoneos/libPods-Facebook-iOS-SDK.a"; sourceTree = "<group>"; };
+		50E31E191AE556C600547803 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		54401B30E128C681F11159BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B6F48697E7CDDFC308F6C2BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -312,6 +437,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E31E1A1AE556C600547803 /* libsqlite3.0.dylib in Frameworks */,
+				50E31E181AE555C500547803 /* libPods-Facebook-iOS-SDK.a in Frameworks */,
 				50AF90031AB73FEC00A7C0F4 /* CJSONDataSerializer.h in Frameworks */,
 				50AF90041AB73FEC00A7C0F4 /* CJSONDataSerializer.m in Frameworks */,
 				50AF90051AB73FEC00A7C0F4 /* CJSONDeserializer.h in Frameworks */,
@@ -459,6 +586,9 @@
 		5083F6A61A75CA74008F5A81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50E31E191AE556C600547803 /* libsqlite3.0.dylib */,
+				50E31E171AE555C500547803 /* libPods-Facebook-iOS-SDK.a */,
+				50E31D991AE5556500547803 /* TouchJSON */,
 				50E31D491AE4DA4600547803 /* include */,
 				50AF8FF81AB73FC700A7C0F4 /* JSON */,
 				50AF8F791AB73F3F00A7C0F4 /* TouchJSON_1.0.8_Release */,
@@ -816,6 +946,211 @@
 			name = bd;
 			sourceTree = "<group>";
 		};
+		50E31D991AE5556500547803 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				50E31D9A1AE5556500547803 /* Benchmarking */,
+				50E31DAE1AE5556500547803 /* Demo */,
+				50E31DB01AE5556500547803 /* LICENSE.txt */,
+				50E31DB11AE5556500547803 /* README.txt */,
+				50E31DB21AE5556500547803 /* Source */,
+				50E31DC91AE5556500547803 /* TouchJSON.xcodeproj */,
+				50E31DCC1AE5556500547803 /* UnitTests */,
+			);
+			name = TouchJSON;
+			path = ../../../Downloads/TouchJSON_1.0.8_Release/TouchJSON;
+			sourceTree = "<group>";
+		};
+		50E31D9A1AE5556500547803 /* Benchmarking */ = {
+			isa = PBXGroup;
+			children = (
+				50E31D9B1AE5556500547803 /* BSJSON_Test.m */,
+				50E31D9C1AE5556500547803 /* JSONBenchmarking.1 */,
+				50E31D9D1AE5556500547803 /* JSONBenchmarking.m */,
+				50E31D9E1AE5556500547803 /* JSONBenchmarking.xcodeproj */,
+				50E31DA11AE5556500547803 /* JSONBenchmarking_Prefix.pch */,
+				50E31DA21AE5556500547803 /* load.py */,
+				50E31DA31AE5556500547803 /* main.m */,
+				50E31DA41AE5556500547803 /* Prefix.pch */,
+				50E31DA51AE5556500547803 /* random_json.py */,
+				50E31DA61AE5556500547803 /* SbrautasetJSON_Test.m */,
+				50E31DA71AE5556500547803 /* Scripts */,
+				50E31DAA1AE5556500547803 /* TestData */,
+				50E31DAD1AE5556500547803 /* TouchJSON_Test.m */,
+			);
+			path = Benchmarking;
+			sourceTree = "<group>";
+		};
+		50E31D9F1AE5556500547803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50E31E0E1AE5556600547803 /* JSONBenchmark */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50E31DA71AE5556500547803 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DA81AE5556500547803 /* load.py */,
+				50E31DA91AE5556500547803 /* random_json.py */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		50E31DAA1AE5556500547803 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DAB1AE5556500547803 /* 1439636.json */,
+				50E31DAC1AE5556500547803 /* 6229615.json */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		50E31DAE1AE5556500547803 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DAF1AE5556500547803 /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		50E31DB21AE5556500547803 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DB31AE5556500547803 /* CDataScanner.h */,
+				50E31DB41AE5556500547803 /* CDataScanner.m */,
+				50E31DB51AE5556500547803 /* Extensions */,
+				50E31DBE1AE5556500547803 /* JSON */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		50E31DB51AE5556500547803 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DB61AE5556500547803 /* CDataScanner_Extensions.h */,
+				50E31DB71AE5556500547803 /* CDataScanner_Extensions.m */,
+				50E31DB81AE5556500547803 /* NSCharacterSet_Extensions.h */,
+				50E31DB91AE5556500547803 /* NSCharacterSet_Extensions.m */,
+				50E31DBA1AE5556500547803 /* NSDictionary_JSONExtensions.h */,
+				50E31DBB1AE5556500547803 /* NSDictionary_JSONExtensions.m */,
+				50E31DBC1AE5556500547803 /* NSScanner_Extensions.h */,
+				50E31DBD1AE5556500547803 /* NSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50E31DBE1AE5556500547803 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DBF1AE5556500547803 /* CJSONDataSerializer.h */,
+				50E31DC01AE5556500547803 /* CJSONDataSerializer.m */,
+				50E31DC11AE5556500547803 /* CJSONDeserializer.h */,
+				50E31DC21AE5556500547803 /* CJSONDeserializer.m */,
+				50E31DC31AE5556500547803 /* CJSONScanner.h */,
+				50E31DC41AE5556500547803 /* CJSONScanner.m */,
+				50E31DC51AE5556500547803 /* CJSONSerializer.h */,
+				50E31DC61AE5556500547803 /* CJSONSerializer.m */,
+				50E31DC71AE5556500547803 /* CSerializedJSONData.h */,
+				50E31DC81AE5556500547803 /* CSerializedJSONData.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		50E31DCA1AE5556500547803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50E31E131AE5556600547803 /* UnitTests.octest */,
+				50E31E151AE5556600547803 /* CocoaJSON Demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50E31DCC1AE5556500547803 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DCD1AE5556500547803 /* Blake.json */,
+				50E31DCE1AE5556500547803 /* CDataScanner_UnitTests.h */,
+				50E31DCF1AE5556500547803 /* CDataScanner_UnitTests.m */,
+				50E31DD01AE5556500547803 /* CJSONDeserializer_UnitTests.h */,
+				50E31DD11AE5556500547803 /* CJSONDeserializer_UnitTests.m */,
+				50E31DD21AE5556500547803 /* CJSONScanner_UnitTests.h */,
+				50E31DD31AE5556500547803 /* CJSONScanner_UnitTests.m */,
+				50E31DD41AE5556500547803 /* CJSONSerializer_UnitTests.h */,
+				50E31DD51AE5556500547803 /* CJSONSerializer_UnitTests.m */,
+				50E31DD61AE5556500547803 /* Info.plist */,
+				50E31DD71AE5556500547803 /* TestData */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		50E31DD71AE5556500547803 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DD81AE5556500547803 /* ex1.json */,
+				50E31DD91AE5556500547803 /* ex1.plist */,
+				50E31DDA1AE5556500547803 /* ex2.json */,
+				50E31DDB1AE5556500547803 /* ex2.plist */,
+				50E31DDC1AE5556500547803 /* ex3.json */,
+				50E31DDD1AE5556500547803 /* ex3.plist */,
+				50E31DDE1AE5556500547803 /* ex4.json */,
+				50E31DDF1AE5556500547803 /* ex4.plist */,
+				50E31DE01AE5556500547803 /* ex5.json */,
+				50E31DE11AE5556500547803 /* JSONChecker */,
+				50E31E071AE5556600547803 /* README */,
+				50E31E081AE5556600547803 /* rfc4627a.json */,
+				50E31E091AE5556600547803 /* rfc4627a.plist */,
+				50E31E0A1AE5556600547803 /* rfc4627b.json */,
+				50E31E0B1AE5556600547803 /* rfc4627b.plist */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		50E31DE11AE5556500547803 /* JSONChecker */ = {
+			isa = PBXGroup;
+			children = (
+				50E31DE21AE5556500547803 /* fail1.json */,
+				50E31DE31AE5556500547803 /* fail10.json */,
+				50E31DE41AE5556500547803 /* fail11.json */,
+				50E31DE51AE5556500547803 /* fail12.json */,
+				50E31DE61AE5556500547803 /* fail13.json */,
+				50E31DE71AE5556500547803 /* fail14.json */,
+				50E31DE81AE5556500547803 /* fail15.json */,
+				50E31DE91AE5556600547803 /* fail16.json */,
+				50E31DEA1AE5556600547803 /* fail17.json */,
+				50E31DEB1AE5556600547803 /* fail18.json */,
+				50E31DEC1AE5556600547803 /* fail19.json */,
+				50E31DED1AE5556600547803 /* fail2.json */,
+				50E31DEE1AE5556600547803 /* fail20.json */,
+				50E31DEF1AE5556600547803 /* fail21.json */,
+				50E31DF01AE5556600547803 /* fail22.json */,
+				50E31DF11AE5556600547803 /* fail23.json */,
+				50E31DF21AE5556600547803 /* fail24.json */,
+				50E31DF31AE5556600547803 /* fail25.json */,
+				50E31DF41AE5556600547803 /* fail26.json */,
+				50E31DF51AE5556600547803 /* fail27.json */,
+				50E31DF61AE5556600547803 /* fail28.json */,
+				50E31DF71AE5556600547803 /* fail29.json */,
+				50E31DF81AE5556600547803 /* fail3.json */,
+				50E31DF91AE5556600547803 /* fail30.json */,
+				50E31DFA1AE5556600547803 /* fail31.json */,
+				50E31DFB1AE5556600547803 /* fail32.json */,
+				50E31DFC1AE5556600547803 /* fail33.json */,
+				50E31DFD1AE5556600547803 /* fail4.json */,
+				50E31DFE1AE5556600547803 /* fail5.json */,
+				50E31DFF1AE5556600547803 /* fail6.json */,
+				50E31E001AE5556600547803 /* fail7.json */,
+				50E31E011AE5556600547803 /* fail8.json */,
+				50E31E021AE5556600547803 /* fail9.json */,
+				50E31E031AE5556600547803 /* pass1.json */,
+				50E31E041AE5556600547803 /* pass2.json */,
+				50E31E051AE5556600547803 /* pass3.json */,
+				50E31E061AE5556600547803 /* README */,
+			);
+			path = JSONChecker;
+			sourceTree = "<group>";
+		};
 		9378AA0F602B9795A95F0DC0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -896,12 +1231,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 50E31D9F1AE5556500547803 /* Products */;
+					ProjectRef = 50E31D9E1AE5556500547803 /* JSONBenchmarking.xcodeproj */;
+				},
+				{
 					ProductGroup = 50AF8F801AB73F3F00A7C0F4 /* Products */;
 					ProjectRef = 50AF8F7F1AB73F3F00A7C0F4 /* JSONBenchmarking.xcodeproj */;
 				},
 				{
 					ProductGroup = 50AF8FAB1AB73F3F00A7C0F4 /* Products */;
 					ProjectRef = 50AF8FAA1AB73F3F00A7C0F4 /* TouchJSON.xcodeproj */;
+				},
+				{
+					ProductGroup = 50E31DCA1AE5556500547803 /* Products */;
+					ProjectRef = 50E31DC91AE5556500547803 /* TouchJSON.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -932,6 +1275,27 @@
 			fileType = "compiled.mach-o.executable";
 			path = "CocoaJSON Demo";
 			remoteRef = 50AF8FF51AB73F3F00A7C0F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50E31E0E1AE5556600547803 /* JSONBenchmark */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = JSONBenchmark;
+			remoteRef = 50E31E0D1AE5556600547803 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50E31E131AE5556600547803 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 50E31E121AE5556600547803 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50E31E151AE5556600547803 /* CocoaJSON Demo */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "CocoaJSON Demo";
+			remoteRef = 50E31E141AE5556600547803 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1147,6 +1511,10 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = prova/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = prova;
 			};
 			name = Debug;
@@ -1159,6 +1527,10 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = prova/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = prova;
 			};
 			name = Release;

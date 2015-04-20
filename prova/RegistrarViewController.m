@@ -13,6 +13,8 @@
 @end
 
 @implementation RegistrarViewController
+@synthesize window = _window;
+@synthesize nombre,apellido,email,phone,password,repite_password;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +25,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)dealloc{
+    [nombre release];
+    [apellido release];
+    [email release];
+    [phone release];
+    [password release];
+    [repite_password release];
+    [_window release];
+    [super dealloc];
 }
 
 -(void) placeholderColors{
@@ -71,5 +84,11 @@
 */
 
 - (IBAction)registrarse:(id)sender {
+    NSString *strURl = [NSString stringWithFormat:@"http//localhost/MAMP/conexion.php?nombre=?%,apellido=?%,email=?%,phone=?%,password=?%,repite_password=?%",nombre.text,apellido.text,email.text,phone.text,password.text,repite_password.text];
+    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURl]];
+    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+    NSLog(@"%@", strResult);
+    
+    
 }
 @end

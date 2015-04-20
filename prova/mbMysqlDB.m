@@ -125,13 +125,9 @@
 - (void) errorMessage
 {
     if(lastError){
-        NSAlert* alert = [[NSAlert alloc] init];
-        [alert addButtonWithTitle:@"OK"];
-        [alert setMessageText:@"MySQL error"];
-        [alert setInformativeText:lastError];
-        [alert setAlertStyle:NSWarningAlertStyle];
-        [alert runModal];
-        lastError = nil;
+
+        
+        
     }
 }
 

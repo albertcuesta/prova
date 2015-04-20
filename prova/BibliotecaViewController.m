@@ -15,21 +15,21 @@
 @implementation BibliotecaViewController
 
 - (void)viewDidLoad {
-   /* [super viewDidLoad];
-    NSURL *url = [[NSURL URLWithString:@"http//192.168.1.2:8888/ConsultaMysql.php"];
+   [super viewDidLoad];
+    NSURL *url = [NSURL URLWithString:@"http//localhost/MAMP/conexion.php"];
     NSString(*jsonreturn) = [[NSString alloc]initWithContentsOfURL:url];
     NSLog(jsonreturn);
     
     NSData *jsonData = [jsonreturn dataUsingEncoding:NSUTF32BigEndianStringEncoding];
     NSError *error = nil;
    
-    NSDictionary *dict = [[CSJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
+    NSDictionary *dict = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
     if(dict)
     {
         rows = [dict objectForKey:@"users"];
     }
     NSLog(@"array: %@",rows);
- */
+ 
                   
 }
 
@@ -39,26 +39,26 @@
     }
 
 - (void) viewDidAppear:(BOOL)animated
-                  {
-                      [super viewDidAppear:animated];
-                  }
-                  -(void) viewWillAppear:(BOOL)animated
-                  {
-                      [super viewWillAppear:animated];
-                  }
-                  -(void) viewWillDisappear:(BOOL)animated
-                  {
-                      [super viewWillDisappear:animated];
-                  }
-                  -(void)viewDidDisappear:(BOOL)animated{
-                      [super viewDidDisappear:animated];
-                    
-                  }
-                 /* - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-                      //return (interfaceOrientation != UIInterfaceOrientationMaskPortraitUpsideDown);
-                  }
+  {
+    [super viewDidAppear:animated];
+  }
 
-            */
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+}
+                  
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation{
+   return (interfaceOrientation != UIInterfaceOrientationMaskPortraitUpsideDown);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -138,8 +138,7 @@
 }
 */
 }
-- (IBAction)registarButton:(id)sender {
-}
+
 
 - (IBAction)facebookButton:(id)sender {
  //   [self facebookLogin];

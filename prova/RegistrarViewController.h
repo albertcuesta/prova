@@ -10,7 +10,7 @@
 
 @interface RegistrarViewController : UIViewController
 
-
+@property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (strong, nonatomic) IBOutlet UITextField *apellido;
 @property (strong, nonatomic) IBOutlet UITextField *email;
 @property (strong, nonatomic) IBOutlet UITextField *nombre;

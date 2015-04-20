@@ -1,0 +1,51 @@
+
+/* Class = "IBUITextField"; placeholder = "usuario"; ObjectID = "4dM-ik-Yms"; */
+"4dM-ik-Yms.placeholder" = "usuario";
+
+/* Class = "IBUITextField"; placeholder = "password"; ObjectID = "HBj-gw-0TC"; */
+"HBj-gw-0TC.placeholder" = "password";
+
+/* Class = "IBUIButton"; normalTitle = "crear cuenta"; ObjectID = "ImP-bA-Sms"; */
+"ImP-bA-Sms.normalTitle" = "crear cuenta";
+
+/* Class = "IBUITextField"; placeholder = "Apellido"; ObjectID = "Nw7-m0-tuD"; */
+"Nw7-m0-tuD.placeholder" = "Apellido";
+
+/* Class = "IBUILabel"; text = "Crear usuario"; ObjectID = "O0c-76-bVj"; */
+"O0c-76-bVj.text" = "Crear usuario";
+
+/* Class = "IBUIButton"; normalTitle = "facebook"; ObjectID = "OW0-5U-VAy"; */
+"OW0-5U-VAy.normalTitle" = "facebook";
+
+/* Class = "IBUIButton"; normalTitle = "Registrarse"; ObjectID = "QSY-fJ-zE0"; */
+"QSY-fJ-zE0.normalTitle" = "Registrarse";
+
+/* Class = "IBUITextField"; placeholder = "password"; ObjectID = "Y33-w5-CYJ"; */
+"Y33-w5-CYJ.placeholder" = "password";
+
+/* Class = "IBUIButton"; normalTitle = "llibreria"; ObjectID = "anC-Rj-BxF"; */
+"anC-Rj-BxF.normalTitle" = "llibreria";
+
+/* Class = "IBUIButton"; normalTitle = "Pizarra"; ObjectID = "dwh-Pl-yiv"; */
+"dwh-Pl-yiv.normalTitle" = "Pizarra";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "lUd-vf-ee2"; */
+"lUd-vf-ee2.placeholder" = "Email";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "ljp-iC-bBy"; */
+"ljp-iC-bBy.normalTitle" = "Button";
+
+/* Class = "IBUITextField"; placeholder = "repite password"; ObjectID = "oKR-fb-JZf"; */
+"oKR-fb-JZf.placeholder" = "repite password";
+
+/* Class = "IBUITextField"; placeholder = "Telefono"; ObjectID = "rAb-fq-p8X"; */
+"rAb-fq-p8X.placeholder" = "Telefono";
+
+/* Class = "IBUITextField"; placeholder = "Nombre"; ObjectID = "vRq-Pb-KmF"; */
+"vRq-Pb-KmF.placeholder" = "Nombre";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "wpd-ls-BSo"; */
+"wpd-ls-BSo.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "Start"; ObjectID = "yaL-eR-lhB"; */
+"yaL-eR-lhB.normalTitle" = "Start";

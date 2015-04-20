@@ -7,16 +7,42 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "RegistrarViewController.h"
+#import "MenuViewController.h"
+#import "LoginTableTableViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize window = _window;
+@synthesize navigationCotroller = _navigationCotroller;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [NSThread sleepForTimeInterval:1.5];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0]];
+    //color de la navigationbar
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:2555.0/255.0 green:116/255.0 blue:0/255.0 alpha:1.0]];
+    //backgroundcolor de las views de la app
+  _window.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    LoginTableTableViewController *loginTableTableViewController =[[LoginTableTableViewController alloc]initWithNibName:@"LoginTableTableViewController" bundle:nil];
+    self.navigationCotroller = [[UINavigationController alloc]initWithRootViewController:loginTableTableViewController];
+    
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor whiteColor];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"Open Sans" size:18.0], NSFontAttributeName, nil]];
+ 
+
     return YES;
 }
 

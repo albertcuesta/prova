@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface provaTests : XCTestCase
+@interface PizarraBasquetTests : XCTestCase
 
 @end
 
-@implementation provaTests
+@implementation PizarraBasquetTests
 
 - (void)setUp {
     [super setUp];

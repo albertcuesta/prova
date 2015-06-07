@@ -12,6 +12,8 @@
 	<dict>
 		<key>50989C5A37C97B7FAA2E984459CA04648DC37040</key>
 		<string>https://github.com/albertcuesta/prova.git</string>
+		<key>b8277514-0f59-445d-adef-5c4650dc4587++3176</key>
+		<string>http://svn/Productos/ANDROID/enmob/enmob-ios</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>prova.xcworkspace</string>
@@ -19,6 +21,13 @@
 	<dict>
 		<key>50989C5A37C97B7FAA2E984459CA04648DC37040</key>
 		<string>..</string>
+		<key>b8277514-0f59-445d-adef-5c4650dc4587++3176</key>
+		<string>../../Users/acue/Desktop/carpeta%20sin%20copia/enmob-ios</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>b8277514-0f59-445d-adef-5c4650dc4587++3176</key>
+		<string>http://svn/Productos/ANDROID</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/albertcuesta/prova.git</string>
@@ -28,6 +37,14 @@
 	<string>50989C5A37C97B7FAA2E984459CA04648DC37040</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>b8277514-0f59-445d-adef-5c4650dc4587++3176</string>
+			<key>IDESourceControlWCCName</key>
+			<string>enmob-ios</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

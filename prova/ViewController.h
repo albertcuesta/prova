@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FacebookSDK/FacebookSDK.h>
+//#import <FacebookSDK/FacebookSDK.h>
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
@@ -16,11 +16,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UIButton *registrarButton;
 @property (strong, nonatomic) IBOutlet UIButton *facebookButton;
-@property NSDictionary * credentialsDictionary;
-
+@property (strong, nonatomic) NSDictionary * credentialsDictionary;
+@property(nonatomic, assign) NSMutableData *datosRecibidos;
 - (IBAction)StartButton:(id)sender;
-- (IBAction)registarButton:(id)sender;
 - (IBAction)facebookButton:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *btnInfo;
+- (IBAction)accionInfo:(id)sender;
 
 @end
 

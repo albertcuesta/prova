@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kURL @"http//localhost/MAMP/dades.php"]
 
-@interface BibliotecaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
-    UITableView *tableview;
-    NSArray *rows;
+@interface BibliotecaViewController : UITableViewController {
+
+    NSMutableArray *inf;
 }
 
-@property (strong, nonatomic) IBOutlet UITableView *tableview;
-@property (strong, nonatomic) NSArray *rows;
 @end

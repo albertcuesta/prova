@@ -7,7 +7,10 @@
 //
 
 #import "BibliotecaViewController.h"
-#import "CJSONDeserializer.h"
+//#import "CJSONDeserializer.h"
+
+
+
 @interface BibliotecaViewController ()
 
 @end
@@ -16,27 +19,11 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-    NSURL *url = [NSURL URLWithString:@"http//localhost/MAMP/conexion.php"];
-    NSString(*jsonreturn) = [[NSString alloc]initWithContentsOfURL:url];
-    NSLog(jsonreturn);
-    
-    NSData *jsonData = [jsonreturn dataUsingEncoding:NSUTF32BigEndianStringEncoding];
-    NSError *error = nil;
-   
-    NSDictionary *dict = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
-    if(dict)
-    {
-        rows = [dict objectForKey:@"users"];
-    }
-    NSLog(@"array: %@",rows);
- 
-                  
+    [self getData];
+         
 }
 
-- (void)viewDidUnLoad {
-    [super viewDidUnLoad];
-                      
-    }
+
 
 - (void) viewDidAppear:(BOOL)animated
   {
@@ -44,7 +31,8 @@
   }
 
 -(void) viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+    [self getData];
+    [self.tableView reloadData];
 }
 
 -(void) viewWillDisappear:(BOOL)animated{
@@ -65,10 +53,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)getData{
+    NSError *error;
+    NSMutableString *strlURL = [[NSMutableString alloc] initWithFormat:kURL;
+    
+    NSURL *url = [NSURL URLWithString:strlURL];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    inf = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
 
-    return [rows count];
+    return [inf count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -80,13 +78,12 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
  static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(cell == nil){
-        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    NSDictionary *dict = [rows objectAtIndex:indexPath.row];
-    cell.textLabel.text = [dict objectForKey:@"userid"];
-    cell.detailTextLabel.text = [dict objectForKey:@"email"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
+   
+    NSDictionary *dict = [inf objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dict objectForKey:@"text"];
+    cell.detailTextLabel.text = [dict objectForKey:@"detail"];
     return cell;
 }
 

@@ -12,11 +12,12 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (strong, nonatomic) IBOutlet UITextField *apellido;
-@property (strong, nonatomic) IBOutlet UITextField *email;
+@property (retain, nonatomic) IBOutlet UITextField *usuario;
+
 @property (strong, nonatomic) IBOutlet UITextField *nombre;
 @property (strong, nonatomic) IBOutlet UITextField *phone;
 @property (strong, nonatomic) IBOutlet UITextField *password;
-@property (strong, nonatomic) IBOutlet UITextField *repite_password;
+
 - (IBAction)registrarse:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *registrarButton;
 

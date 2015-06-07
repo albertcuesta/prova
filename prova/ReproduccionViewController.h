@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-/*@interface ReproduccionViewController : UIViewController<NSXMLParserDelegate>{
+
+@interface ReproduccionViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+{
+    IBOutlet UIImageView *images;
     NSMutableArray *photos;
     NSTimer *timer;
-    IBOutlet UIImageView *imgView;
     int currentImage;
-}*/
-@interface ReproduccionViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
-@property (retain, nonatomic) IBOutlet UIImageView *uimage;
-
+}
+@property (nonatomic, retain) IBOutlet UIImageView *images;
+-(IBAction)start:(id)sender;
+-(IBAction)stop:(id)sender;
 @end

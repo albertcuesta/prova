@@ -25,7 +25,7 @@
     
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0]];
     //color de la navigationbar
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:2555.0/255.0 green:116/255.0 blue:0/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:85.0/255.0 green:157.0/255.0 blue:224.0/255.0 alpha:1.0]];
     //backgroundcolor de las views de la app
   _window.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];

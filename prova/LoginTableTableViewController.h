@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 //using this delegate to make the keyboard disappeard
-@interface LoginTableTableViewController : UITableViewController <UITextFieldDelegate>
+@interface LoginTableTableViewController : UIViewController
 
+{
+    
 
-@property (nonatomic, retain) NSArray *arraylogin;
-@property (nonatomic, retain) IBOutlet UITextField *username;
-@property (nonatomic, retain) IBOutlet UITextField *password;
+    
+    IBOutlet UILabel *lblRespuesta;
+}
+
+@property(nonatomic, assign) NSMutableData *datosRecibidos;
+
 @end

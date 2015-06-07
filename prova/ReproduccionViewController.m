@@ -10,10 +10,11 @@
 
 
 
+
 @implementation ReproduccionViewController
 
 
-@synthesize uimage;
+@synthesize images;
 
 
 #pragma mark - Show camera
@@ -24,7 +25,7 @@
     imagePickController.sourceType=UIImagePickerControllerSourceTypeCamera;
     imagePickController.delegate=self;
     imagePickController.allowsEditing=TRUE;
-    [self presentModalViewController:imagePickController animated:YES];
+    [self presentViewController:imagePickController animated:YES completion:nil];
     [imagePickController release];
 }
 
@@ -32,9 +33,9 @@
 
 -(IBAction)saveImageAction:(id)sender
 {
-    UIImage *image=uimage.image;
+    UIImage *image=image.images;
     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-   
+    
 }
 
 #pragma mark - When finish shoot
@@ -42,17 +43,17 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image=[info objectForKey:UIImagePickerControllerEditedImage];
-    uimage.image=image;
+    images.image=image;
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Release object
 
 - (void)dealloc {
-    [uimage release];
+    [images release];
     
-  
+    
     [super dealloc];
 }
 
@@ -69,6 +70,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    photos = [[NSMutableArray alloc]init];
+    NSXMLParser *photoParser = [[[NSXMLParser alloc]
+                                 initWithContentsOfURL:[NSURL URLWithString:@"http://192.168.1.39:8888/photos/index.xml"]]autorelease];
+    [photoParser setDelegate:self];
+    [photoParser parse];
+    currentImage = 0;
+    
+    NSURL *imageURL = [NSURL URLWithString:@"http://192.168.1.39:8888/photos/"];
+    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+    [images setImage: [UIImage imageWithData:imageData]];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(handleTimer) userInfo:nil repeats:YES];
+    
+}
+
+-(void) handleTimer:(NSTimer *) timer{
+    currentImage++;
+    if(currentImage>= photos.count)
+        currentImage = 0;
+    
+    NSURL *imageURL = [NSURL URLWithString:[photos objectAtIndex:currentImage]];
+    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+    [images setImage:[UIImage imageWithData:imageData]];
+}
+
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+    if([elementName isEqualToString:@"photo"]){
+        [photos addObject:[attributeDict objectForKey:@"url"]];
+    }
 }
 
 - (void)viewDidUnload
@@ -103,64 +133,18 @@
     return YES;
 }
 
+
+-(IBAction)start:(id)sender{
+    images.animationImages = [NSArray arrayWithObjects:nil];
+    images.animationDuration = 1;
+    images.animationRepeatCount=0;
+    [images startAnimating];
+    [self.view addSubview:images];
+    
+}
+-(IBAction)stop:(id)sender{
+    [images stopAnimating];
+}
+
+
 @end
-/*
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    photos = [[NSMutableArray alloc] init];
-    
-    NSXMLParser *photoParser = [[[NSXMLParser alloc]initWithContentsOfURL:[NSURL URLWithString:@"http://localhost/photos.xml"]]autorelease];
-    [photoParser setDelegate:self];
-    [photoParser parse];
-    
-    currentImage=0;
-    
-    NSURL *imageURL = [NSURL URLWithString:[photos objectAtIndex:0]];
-    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-    [imgView setImage:[UIImage imageWithData:imageData]];
-    
-    timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(handleTimer) userInfo:nil repeats:YES];
-}
-
-- (void) handleTimer: (NSTimer * ) timer{
-    currentImage++;
-    if(currentImage >= photos.count)
-        currentImage=0;
-    
-    NSURL *imageURL = [NSURL URLWithString:[photos objectAtIndex:currentImage]];
-    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-    [imgView setImage:[UIImage imageWithData:imageData]];
-    
-}
-
-
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName
-  namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
-    attributes:(NSDictionary *)attributeDict {
-    if ( [elementName isEqualToString:@"photo"]) {
-        [photos addObject:[attributeDict objectForKey:@"url"]];
-    }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    }
-
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:
-(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
-
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-//@end

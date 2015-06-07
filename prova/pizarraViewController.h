@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "TickleGestureRecognizer.h"
 
-@interface pizarraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface pizarraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 @property CGPoint ultimoPunto;
 
 
@@ -23,6 +24,13 @@
 @property (strong, nonatomic) IBOutlet UIImageView *zonaDibujo;
 @property (strong, nonatomic) NSURL *videoURL;
 @property (strong, nonatomic) MPMoviePlayerController *videoController;
+@property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *jugador;
+@property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *jugador2;
+@property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *jugador3;
+@property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *jugador4;
+@property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *jugador5;
+@property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *pelota;
+
 
 
 - (IBAction)lapiz_dibujar:(id)sender;
@@ -30,5 +38,7 @@
 - (IBAction)goma_borrar:(id)sender;
 
 - (IBAction)startButton:(id)sender;
+
+- (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer;
 
 @end

@@ -29,6 +29,8 @@
 		50190C031A75B64B00FCD6FD /* pista_basquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50190BFE1A75B64B00FCD6FD /* pista_basquet.jpg */; };
 		5026A8A91B1762B900AF231D /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 5026A8A81B1762B900AF231D /* user.png */; };
 		5026A8AB1B1762C200AF231D /* unlocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5026A8AA1B1762C200AF231D /* unlocked.png */; };
+		502BD4101B25ADBB00731325 /* LoginTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502BD40D1B25ADBB00731325 /* LoginTableTableViewController.m */; };
+		502BD4111B25ADBB00731325 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502BD40F1B25ADBB00731325 /* AppMainViewController.m */; };
 		504985B31A890E1600479C68 /* ReproduccionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504985B21A890E1500479C68 /* ReproduccionViewController.m */; };
 		504D7DB11A9B7CFF00B20901 /* jugador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 504D7DB01A9B7CFF00B20901 /* jugador.jpg */; };
 		504D7DB31A9B807700B20901 /* balon.png in Resources */ = {isa = PBXBuildFile; fileRef = 504D7DB21A9B807700B20901 /* balon.png */; };
@@ -39,12 +41,7 @@
 		5083F6991A75BC53008F5A81 /* pizarraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F6981A75BC53008F5A81 /* pizarraViewController.m */; };
 		5083F69C1A75BF48008F5A81 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F69B1A75BF48008F5A81 /* MenuViewController.m */; };
 		5083F6A01A75C0FC008F5A81 /* RegistrarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F69F1A75C0FC008F5A81 /* RegistrarViewController.m */; };
-		5090FC7E1B24B36000F30E71 /* biblioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5090FC7D1B24B36000F30E71 /* biblioTableViewController.m */; };
 		50ADDCC31A764DC900B43632 /* BibliotecaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADDCC21A764DC900B43632 /* BibliotecaViewController.m */; };
-		50E31C941AE3B92800547803 /* LoginTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31C921AE3B92800547803 /* LoginTableTableViewController.m */; };
-		50E31C9D1AE3C33900547803 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31C9C1AE3C33900547803 /* AppMainViewController.m */; };
-		50E31D931AE4F35000547803 /* mbMysqlDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31D921AE4F35000547803 /* mbMysqlDB.m */; };
-		50E31D961AE4F4BA00547803 /* mbMysqlQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31D951AE4F4BA00547803 /* mbMysqlQuery.m */; };
 		50E31E1A1AE556C600547803 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E31E191AE556C600547803 /* libsqlite3.0.dylib */; };
 		842340B55983D8AF164A47E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F48697E7CDDFC308F6C2BD /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -112,6 +109,10 @@
 		50190BFE1A75B64B00FCD6FD /* pista_basquet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pista_basquet.jpg; sourceTree = "<group>"; };
 		5026A8A81B1762B900AF231D /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		5026A8AA1B1762C200AF231D /* unlocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlocked.png; sourceTree = "<group>"; };
+		502BD40C1B25ADBB00731325 /* LoginTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginTableTableViewController.h; path = ../../prova2/prova/LoginTableTableViewController.h; sourceTree = "<group>"; };
+		502BD40D1B25ADBB00731325 /* LoginTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginTableTableViewController.m; path = ../../prova2/prova/LoginTableTableViewController.m; sourceTree = "<group>"; };
+		502BD40E1B25ADBB00731325 /* AppMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMainViewController.h; path = ../../prova2/prova/AppMainViewController.h; sourceTree = "<group>"; };
+		502BD40F1B25ADBB00731325 /* AppMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMainViewController.m; path = ../../prova2/prova/AppMainViewController.m; sourceTree = "<group>"; };
 		504985B11A890E1500479C68 /* ReproduccionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReproduccionViewController.h; sourceTree = "<group>"; };
 		504985B21A890E1500479C68 /* ReproduccionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReproduccionViewController.m; sourceTree = "<group>"; };
 		504D7DB01A9B7CFF00B20901 /* jugador.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jugador.jpg; sourceTree = "<group>"; };
@@ -128,14 +129,8 @@
 		5083F69F1A75C0FC008F5A81 /* RegistrarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrarViewController.m; sourceTree = "<group>"; };
 		5083F6A41A75C9EA008F5A81 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		5083F6A51A75C9EA008F5A81 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		5090FC7C1B24B36000F30E71 /* biblioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biblioTableViewController.h; sourceTree = "<group>"; };
-		5090FC7D1B24B36000F30E71 /* biblioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = biblioTableViewController.m; sourceTree = "<group>"; };
 		50ADDCC11A764DC900B43632 /* BibliotecaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibliotecaViewController.h; sourceTree = "<group>"; };
 		50ADDCC21A764DC900B43632 /* BibliotecaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibliotecaViewController.m; sourceTree = "<group>"; };
-		50E31C911AE3B92800547803 /* LoginTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableTableViewController.h; sourceTree = "<group>"; };
-		50E31C921AE3B92800547803 /* LoginTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableTableViewController.m; sourceTree = "<group>"; };
-		50E31C9B1AE3C33900547803 /* AppMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMainViewController.h; sourceTree = "<group>"; };
-		50E31C9C1AE3C33900547803 /* AppMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMainViewController.m; sourceTree = "<group>"; };
 		50E31D4A1AE4DA4600547803 /* big_endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = big_endian.h; sourceTree = "<group>"; };
 		50E31D4B1AE4DA4600547803 /* byte_order_generic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byte_order_generic.h; sourceTree = "<group>"; };
 		50E31D4C1AE4DA4600547803 /* byte_order_generic_x86.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byte_order_generic_x86.h; sourceTree = "<group>"; };
@@ -194,10 +189,6 @@
 		50E31D831AE4DA4600547803 /* sslopt-longopts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sslopt-longopts.h"; sourceTree = "<group>"; };
 		50E31D841AE4DA4600547803 /* sslopt-vars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sslopt-vars.h"; sourceTree = "<group>"; };
 		50E31D851AE4DA4600547803 /* typelib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
-		50E31D911AE4F35000547803 /* mbMysqlDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbMysqlDB.h; sourceTree = "<group>"; };
-		50E31D921AE4F35000547803 /* mbMysqlDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbMysqlDB.m; sourceTree = "<group>"; };
-		50E31D941AE4F4BA00547803 /* mbMysqlQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbMysqlQuery.h; sourceTree = "<group>"; };
-		50E31D951AE4F4BA00547803 /* mbMysqlQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbMysqlQuery.m; sourceTree = "<group>"; };
 		50E31E171AE555C500547803 /* libPods-Facebook-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Facebook-iOS-SDK.a"; path = "Pods/build/Debug-iphoneos/libPods-Facebook-iOS-SDK.a"; sourceTree = "<group>"; };
 		50E31E191AE556C600547803 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		50FFC89D1AEE951100D075BF /* BSJSON_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSJSON_Test.m; sourceTree = "<group>"; };
@@ -352,8 +343,6 @@
 		50190BCD1A75B5C700FCD6FD /* prova */ = {
 			isa = PBXGroup;
 			children = (
-				5083F6A21A75C8F5008F5A81 /* Models */,
-				5083F6A31A75C8FE008F5A81 /* Views */,
 				5083F6A11A75C8D1008F5A81 /* Controllers */,
 				5083F69D1A75BF99008F5A81 /* imagenes */,
 				50190BD81A75B5C700FCD6FD /* Main.storyboard */,
@@ -390,6 +379,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		502BD40B1B25ADAB00731325 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				502BD40C1B25ADBB00731325 /* LoginTableTableViewController.h */,
+				502BD40D1B25ADBB00731325 /* LoginTableTableViewController.m */,
+				502BD40E1B25ADBB00731325 /* AppMainViewController.h */,
+				502BD40F1B25ADBB00731325 /* AppMainViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		5083F69D1A75BF99008F5A81 /* imagenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,12 +414,9 @@
 		5083F6A11A75C8D1008F5A81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5090FC7C1B24B36000F30E71 /* biblioTableViewController.h */,
-				5090FC7D1B24B36000F30E71 /* biblioTableViewController.m */,
+				502BD40B1B25ADAB00731325 /* login */,
 				124F93111B1727B50081C4B6 /* AcercaDeViewController.h */,
 				124F93121B1727B50081C4B6 /* AcercaDeViewController.m */,
-				50E31D8C1AE4F32500547803 /* bd */,
-				50E31C9A1AE3B93400547803 /* login */,
 				50190BD21A75B5C700FCD6FD /* AppDelegate.h */,
 				50190BD31A75B5C700FCD6FD /* AppDelegate.m */,
 				50190BD51A75B5C700FCD6FD /* ViewController.h */,
@@ -440,20 +437,6 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		5083F6A21A75C8F5008F5A81 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		5083F6A31A75C8FE008F5A81 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		5083F6A61A75CA74008F5A81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,17 +452,6 @@
 				B6F48697E7CDDFC308F6C2BD /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		50E31C9A1AE3B93400547803 /* login */ = {
-			isa = PBXGroup;
-			children = (
-				50E31C911AE3B92800547803 /* LoginTableTableViewController.h */,
-				50E31C921AE3B92800547803 /* LoginTableTableViewController.m */,
-				50E31C9B1AE3C33900547803 /* AppMainViewController.h */,
-				50E31C9C1AE3C33900547803 /* AppMainViewController.m */,
-			);
-			name = login;
 			sourceTree = "<group>";
 		};
 		50E31D491AE4DA4600547803 /* include */ = {
@@ -562,17 +534,6 @@
 				50E31D751AE4DA4600547803 /* psi_memory.h */,
 			);
 			path = psi;
-			sourceTree = "<group>";
-		};
-		50E31D8C1AE4F32500547803 /* bd */ = {
-			isa = PBXGroup;
-			children = (
-				50E31D911AE4F35000547803 /* mbMysqlDB.h */,
-				50E31D921AE4F35000547803 /* mbMysqlDB.m */,
-				50E31D941AE4F4BA00547803 /* mbMysqlQuery.h */,
-				50E31D951AE4F4BA00547803 /* mbMysqlQuery.m */,
-			);
-			name = bd;
 			sourceTree = "<group>";
 		};
 		50FFC89B1AEE951100D075BF /* TouchJSON */ = {
@@ -972,20 +933,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502BD4101B25ADBB00731325 /* LoginTableTableViewController.m in Sources */,
 				5083F6A01A75C0FC008F5A81 /* RegistrarViewController.m in Sources */,
-				50E31D961AE4F4BA00547803 /* mbMysqlQuery.m in Sources */,
 				50190BD71A75B5C700FCD6FD /* ViewController.m in Sources */,
+				502BD4111B25ADBB00731325 /* AppMainViewController.m in Sources */,
 				504985B31A890E1600479C68 /* ReproduccionViewController.m in Sources */,
 				50190BD41A75B5C700FCD6FD /* AppDelegate.m in Sources */,
 				5083F6991A75BC53008F5A81 /* pizarraViewController.m in Sources */,
-				5090FC7E1B24B36000F30E71 /* biblioTableViewController.m in Sources */,
 				50ADDCC31A764DC900B43632 /* BibliotecaViewController.m in Sources */,
 				50190BD11A75B5C700FCD6FD /* main.m in Sources */,
 				124F93131B1727B50081C4B6 /* AcercaDeViewController.m in Sources */,
-				50E31C941AE3B92800547803 /* LoginTableTableViewController.m in Sources */,
-				50E31D931AE4F35000547803 /* mbMysqlDB.m in Sources */,
 				5083F69C1A75BF48008F5A81 /* MenuViewController.m in Sources */,
-				50E31C9D1AE3C33900547803 /* AppMainViewController.m in Sources */,
 				12E55CC21AEE289300A37E46 /* TickleGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

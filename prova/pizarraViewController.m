@@ -128,9 +128,9 @@
     
     switch (lapiz_dibujar.tag) {
         case 1:
-            _red = 0.0/255.0;
-            _green = 0.0/255.0;
-            _blue=0.0/255.0;
+            _red = 85.0/255.0;
+            _green = 157.0/255.0;
+            _blue=224.0/255.0;
             break;
             
     }

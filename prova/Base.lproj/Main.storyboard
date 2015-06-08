@@ -38,6 +38,9 @@
                                 <state key="normal" title="llibreria">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dT0-g5-pdb" kind="push" id="2Jj-vB-xYe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mM-Nh-tGz">
                                 <rect key="frame" x="326" y="143" width="117" height="23"/>
@@ -60,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="581" y="345"/>
         </scene>
-        <!--Biblio Table View Controller-->
+        <!--Biblioteca View Controller-->
         <scene sceneID="ImV-G1-WKX">
             <objects>
-                <viewController id="kst-jw-Z9W" customClass="biblioTableViewController" sceneMemberID="viewController">
+                <viewController id="kst-jw-Z9W" customClass="BibliotecaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eX6-qD-Gww"/>
                         <viewControllerLayoutGuide type="bottom" id="opb-37-iOM"/>
@@ -85,11 +88,14 @@
                                 <rect key="frame" x="102" y="104" width="565" height="751"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="10" id="LGc-dd-cza">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationWidth="10" id="LGc-dd-cza">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LGc-dd-cza" id="usD-me-1Zo">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xxd-a4-BHE" kind="push" id="eFv-5J-oAv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -111,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3Z-bd-1OH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3226" y="697"/>
+            <point key="canvasLocation" x="2679" y="716"/>
         </scene>
         <!--Reproduccion View Controller-->
         <scene sceneID="rcS-0P-QTM">
@@ -122,7 +128,7 @@
                         <viewControllerLayoutGuide type="bottom" id="a0s-t4-eBl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1hB-Ig-gyv">
-                        <rect key="frame" x="0.0" y="64" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fdc-rR-hyy">
@@ -150,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TS7-m9-e7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="1361"/>
+            <point key="canvasLocation" x="3582" y="733"/>
         </scene>
         <!--Pizarra View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -190,7 +196,7 @@
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-ls-BSo" userLabel="ColorRojo">
                                         <rect key="frame" x="620" y="10" width="40" height="40"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.61568627450000002" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1695,6 +1701,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dT0-g5-pdb" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Xx2-lT-2iN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IwV-32-Kgd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1706,7 +1713,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irk-B4-kLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414" y="697"/>
+            <point key="canvasLocation" x="1444" y="767"/>
         </scene>
     </scenes>
     <resources>

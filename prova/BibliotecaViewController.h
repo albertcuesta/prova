@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #define kURL @"http//localhost/MAMP/dades.php"]
 
-@interface BibliotecaViewController : UITableViewController {
+@interface BibliotecaViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-    NSMutableArray *inf;
-}
+@property (retain, nonatomic) IBOutlet UITableView *tableview;
+@property (nonatomic, retain) NSMutableArray *inf;
+
 
 @end

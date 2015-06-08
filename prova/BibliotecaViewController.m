@@ -16,10 +16,11 @@
 @end
 
 @implementation BibliotecaViewController
-
+@synthesize  tableview, inf;
 - (void)viewDidLoad {
    [super viewDidLoad];
-    [self getData];
+    [self.tableview setDelegate:self];
+    [self.tableview setDataSource:self];
          
 }
 
@@ -32,7 +33,7 @@
 
 -(void) viewWillAppear:(BOOL)animated{
     [self getData];
-    [self.tableView reloadData];
+    [self.tableview reloadData];
 }
 
 -(void) viewWillDisappear:(BOOL)animated{
@@ -52,7 +53,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 -(void)getData{
     NSError *error;
     NSMutableString *strlURL = [[NSMutableString alloc] initWithFormat:kURL;
@@ -61,7 +62,7 @@
     NSData *data = [NSData dataWithContentsOfURL:url];
     inf = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     
-}
+}*/
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -78,14 +79,21 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
  static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-   
-    NSDictionary *dict = [inf objectAtIndex:indexPath.row];
-    cell.textLabel.text = [dict objectForKey:@"text"];
-    cell.detailTextLabel.text = [dict objectForKey:@"detail"];
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+
+    cell.textLabel.text = [inf objectAtIndex:indexPath.row];
+ 
     return cell;
 }
+                                
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"selected value is %@", [inf objectAtIndex:indexPath.row]] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    
+                                }
 
 
 /*
@@ -98,4 +106,8 @@
 }
 */
 
+- (void)dealloc {
+[tableview release];
+[super dealloc];
+}
 @end

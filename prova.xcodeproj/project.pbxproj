@@ -39,6 +39,7 @@
 		5083F6991A75BC53008F5A81 /* pizarraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F6981A75BC53008F5A81 /* pizarraViewController.m */; };
 		5083F69C1A75BF48008F5A81 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F69B1A75BF48008F5A81 /* MenuViewController.m */; };
 		5083F6A01A75C0FC008F5A81 /* RegistrarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F69F1A75C0FC008F5A81 /* RegistrarViewController.m */; };
+		5090FC7E1B24B36000F30E71 /* biblioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5090FC7D1B24B36000F30E71 /* biblioTableViewController.m */; };
 		50ADDCC31A764DC900B43632 /* BibliotecaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADDCC21A764DC900B43632 /* BibliotecaViewController.m */; };
 		50E31C941AE3B92800547803 /* LoginTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31C921AE3B92800547803 /* LoginTableTableViewController.m */; };
 		50E31C9D1AE3C33900547803 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E31C9C1AE3C33900547803 /* AppMainViewController.m */; };
@@ -127,6 +128,8 @@
 		5083F69F1A75C0FC008F5A81 /* RegistrarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrarViewController.m; sourceTree = "<group>"; };
 		5083F6A41A75C9EA008F5A81 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		5083F6A51A75C9EA008F5A81 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5090FC7C1B24B36000F30E71 /* biblioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biblioTableViewController.h; sourceTree = "<group>"; };
+		5090FC7D1B24B36000F30E71 /* biblioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = biblioTableViewController.m; sourceTree = "<group>"; };
 		50ADDCC11A764DC900B43632 /* BibliotecaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibliotecaViewController.h; sourceTree = "<group>"; };
 		50ADDCC21A764DC900B43632 /* BibliotecaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibliotecaViewController.m; sourceTree = "<group>"; };
 		50E31C911AE3B92800547803 /* LoginTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableTableViewController.h; sourceTree = "<group>"; };
@@ -411,6 +414,8 @@
 		5083F6A11A75C8D1008F5A81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5090FC7C1B24B36000F30E71 /* biblioTableViewController.h */,
+				5090FC7D1B24B36000F30E71 /* biblioTableViewController.m */,
 				124F93111B1727B50081C4B6 /* AcercaDeViewController.h */,
 				124F93121B1727B50081C4B6 /* AcercaDeViewController.m */,
 				50E31D8C1AE4F32500547803 /* bd */,
@@ -973,6 +978,7 @@
 				504985B31A890E1600479C68 /* ReproduccionViewController.m in Sources */,
 				50190BD41A75B5C700FCD6FD /* AppDelegate.m in Sources */,
 				5083F6991A75BC53008F5A81 /* pizarraViewController.m in Sources */,
+				5090FC7E1B24B36000F30E71 /* biblioTableViewController.m in Sources */,
 				50ADDCC31A764DC900B43632 /* BibliotecaViewController.m in Sources */,
 				50190BD11A75B5C700FCD6FD /* main.m in Sources */,
 				124F93131B1727B50081C4B6 /* AcercaDeViewController.m in Sources */,

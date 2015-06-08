@@ -38,9 +38,6 @@
                                 <state key="normal" title="llibreria">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="kst-jw-Z9W" kind="push" id="AKX-M5-cew"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mM-Nh-tGz">
                                 <rect key="frame" x="326" y="143" width="117" height="23"/>
@@ -63,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="581" y="345"/>
         </scene>
-        <!--Biblioteca View Controller-->
+        <!--Biblio Table View Controller-->
         <scene sceneID="ImV-G1-WKX">
             <objects>
-                <viewController id="kst-jw-Z9W" customClass="BibliotecaViewController" sceneMemberID="viewController">
+                <viewController id="kst-jw-Z9W" customClass="biblioTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eX6-qD-Gww"/>
                         <viewControllerLayoutGuide type="bottom" id="opb-37-iOM"/>
@@ -109,11 +106,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="eventsTable" destination="Ip0-xB-TVZ" id="H5U-9I-thF"/>
+                        <outlet property="tableview" destination="Ip0-xB-TVZ" id="za1-Ow-Svl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3Z-bd-1OH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2778" y="717"/>
+            <point key="canvasLocation" x="3226" y="697"/>
         </scene>
         <!--Reproduccion View Controller-->
         <scene sceneID="rcS-0P-QTM">
@@ -152,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TS7-m9-e7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3876" y="777"/>
+            <point key="canvasLocation" x="1592" y="1361"/>
         </scene>
         <!--Pizarra View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1691,6 +1689,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28G-9B-7yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1225" y="325"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GQD-Gl-4qv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dT0-g5-pdb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IwV-32-Kgd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kst-jw-Z9W" kind="relationship" relationship="rootViewController" id="01a-eg-54T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irk-B4-kLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="697"/>
         </scene>
     </scenes>
     <resources>

@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" identifier="" id="g0w-98-ajm"/>
+                                    <segue destination="Cde-iS-3dh" kind="modal" identifier="" id="g0w-98-ajm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anC-Rj-BxF">
@@ -39,7 +39,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dT0-g5-pdb" kind="push" id="2Jj-vB-xYe"/>
+                                    <segue destination="qW7-pa-PMB" kind="push" id="Jew-D1-bmK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mM-Nh-tGz">
@@ -61,7 +61,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0d-z3-fMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="345"/>
+            <point key="canvasLocation" x="644" y="336"/>
+        </scene>
+        <!--Galeria Imagenes View Controller-->
+        <scene sceneID="18D-Wx-uY9">
+            <objects>
+                <viewController id="qW7-pa-PMB" customClass="galeriaImagenesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3QC-7Q-L4N"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ui7-N5-R1U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="coE-w9-8hd">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-21-fFS">
+                                <rect key="frame" x="277" y="445" width="215" height="70"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.61568627450000002" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Galeria">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="qW7-pa-PMB" eventType="touchUpInside" id="BOv-3O-J8k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i8Y-wG-HXL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwE-we-Yrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="1455"/>
         </scene>
         <!--Biblioteca View Controller-->
         <scene sceneID="ImV-G1-WKX">
@@ -93,9 +127,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LGc-dd-cza" id="usD-me-1Zo">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="xxd-a4-BHE" kind="push" id="eFv-5J-oAv"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -128,7 +159,7 @@
                         <viewControllerLayoutGuide type="bottom" id="a0s-t4-eBl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1hB-Ig-gyv">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fdc-rR-hyy">
@@ -156,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TS7-m9-e7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3582" y="733"/>
+            <point key="canvasLocation" x="1460" y="808"/>
         </scene>
         <!--Pizarra View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -167,7 +198,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pista_basquet.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZW3-Fy-Dog">
@@ -176,49 +207,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-1I-WMU">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VcA-bk-k5X">
-                                <rect key="frame" x="0.0" y="944" width="773" height="80"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PP8-zW-xWq" userLabel="stop">
-                                        <rect key="frame" x="310" y="10" width="60" height="60"/>
-                                        <state key="normal" image="pause.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-7u-aZU" userLabel="start">
-                                        <rect key="frame" x="240" y="10" width="60" height="60"/>
-                                        <state key="normal" image="start.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJB-nT-FIJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-ls-BSo" userLabel="ColorRojo">
-                                        <rect key="frame" x="620" y="10" width="40" height="40"/>
-                                        <color key="backgroundColor" red="0.33333333329999998" green="0.61568627450000002" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="lapiz_dibujar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pa-1t-nL4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-iC-bBy" userLabel="Borrar">
-                                        <rect key="frame" x="520" y="10" width="60" height="40"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Borrar">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="goma_borrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpQ-KY-UUo"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="su4-2d-EMR">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.png" translatesAutoresizingMaskIntoConstraints="NO" id="su4-2d-EMR">
                                 <rect key="frame" x="237" y="426" width="72" height="68"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -226,7 +215,7 @@
                                     <outletCollection property="gestureRecognizers" destination="qcg-hk-fpO" appends="YES" id="tQQ-f9-lKu"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oyp-QI-kjH">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oyp-QI-kjH">
                                 <rect key="frame" x="117" y="267" width="72" height="68"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -234,7 +223,7 @@
                                     <outletCollection property="gestureRecognizers" destination="J5v-3n-kwN" appends="YES" id="Brw-Di-MR6"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-lq-KWv">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.png" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-lq-KWv">
                                 <rect key="frame" x="515" y="292" width="72" height="68"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -250,7 +239,7 @@
                                     <outletCollection property="gestureRecognizers" destination="8bO-1C-JAy" appends="YES" id="g5e-0D-eAV"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FV7-1t-4Xu">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.png" translatesAutoresizingMaskIntoConstraints="NO" id="FV7-1t-4Xu">
                                 <rect key="frame" x="515" y="130" width="72" height="68"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -258,7 +247,7 @@
                                     <outletCollection property="gestureRecognizers" destination="pvk-Eg-xgn" appends="YES" id="7Xe-83-JKp"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iVc-mb-XwZ">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jugador.png" translatesAutoresizingMaskIntoConstraints="NO" id="iVc-mb-XwZ">
                                 <rect key="frame" x="191" y="113" width="72" height="68"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -266,10 +255,62 @@
                                     <outletCollection property="gestureRecognizers" destination="j89-OU-p0C" appends="YES" id="GTt-pe-Et4"/>
                                 </connections>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VcA-bk-k5X">
+                                <rect key="frame" x="0.0" y="944" width="773" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-ls-BSo" userLabel="ColorRojo">
+                                        <rect key="frame" x="656" y="10" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.61568627450000002" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lapiz_dibujar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pa-1t-nL4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-iC-bBy" userLabel="Borrar">
+                                        <rect key="frame" x="588" y="10" width="60" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Borrar">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goma_borrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpQ-KY-UUo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6W-ls-oyR" userLabel="ColorRojo">
+                                        <rect key="frame" x="704" y="10" width="40" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lapiz_dibujar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgV-an-xQI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-7u-aZU" userLabel="start">
+                                        <rect key="frame" x="356" y="10" width="60" height="60"/>
+                                        <state key="normal" image="start.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJB-nT-FIJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uRh-MP-HGQ"/>
+                    <navigationItem key="navigationItem" id="uRh-MP-HGQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="TGO-Dv-ssM">
+                            <connections>
+                                <action selector="done:" destination="BYZ-38-t0r" id="bEq-hz-Ibk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="jugador" destination="RKB-Nx-E0V" id="d68-pa-i4d"/>
@@ -355,7 +396,7 @@
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2214" y="-399"/>
+            <point key="canvasLocation" x="3194" y="-399"/>
         </scene>
         <!--Acerca De View Controller-->
         <scene sceneID="wzT-2c-3ds">
@@ -1697,36 +1738,35 @@
             <point key="canvasLocation" x="-1225" y="325"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="GQD-Gl-4qv">
+        <scene sceneID="aV9-IS-Nrm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dT0-g5-pdb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cde-iS-3dh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Xx2-lT-2iN"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IwV-32-Kgd">
+                    <navigationItem key="navigationItem" id="avd-oh-5cV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ft9-kg-wGv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kst-jw-Z9W" kind="relationship" relationship="rootViewController" id="01a-eg-54T"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wCR-3S-Szb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Irk-B4-kLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DU2-8m-bFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="767"/>
+            <point key="canvasLocation" x="2214" y="-399"/>
         </scene>
     </scenes>
     <resources>
         <image name="balon.png" width="1290" height="1290"/>
         <image name="basquetbol.gif" width="429" height="247"/>
-        <image name="jugador.jpg" width="102" height="99"/>
-        <image name="pause.png" width="256" height="256"/>
+        <image name="jugador.png" width="102" height="99"/>
         <image name="pista_basquet.jpg" width="291" height="448"/>
         <image name="start.png" width="640" height="640"/>
         <image name="unlocked.png" width="60" height="60"/>
         <image name="user.png" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rhy-Iw-wzf"/>
+        <segue reference="mMS-11-cDp"/>
     </inferredMetricsTieBreakers>
 </document>

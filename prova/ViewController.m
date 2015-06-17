@@ -77,7 +77,7 @@
 
 
 - (IBAction)StartButton:(id)sender {
-   NSURL *url = [[NSURL alloc] initWithString:@"http://192.168.1.39:8888/user/conexion.php"];
+   NSURL *url = [[NSURL alloc] initWithString:@"http://192.168.180.113:8888/user/conexion.php"];
     
     NSURLRequest *req = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     
@@ -98,6 +98,9 @@
         [errorConnexion release];
         
     }
+    
+    
+    
 };
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField{

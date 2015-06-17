@@ -32,6 +32,7 @@
 @property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *pelota;
 
 
+- (IBAction)done:(id)sender;
 
 - (IBAction)lapiz_dibujar:(id)sender;
 

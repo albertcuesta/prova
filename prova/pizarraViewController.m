@@ -122,6 +122,7 @@
 
 //touchesEnded
 
+
 - (IBAction)lapiz_dibujar:(id)sender {
     UIButton * lapiz_dibujar = (UIButton *) sender;
     
@@ -150,7 +151,7 @@
     AppDelegate *miDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     // Iniciamos un contexto del tamaño que nuestro Window (haciendo la comprobación por si la pantalla es Retina)
-   for(int i = 0; i < 5; i++) {
+   for(int i = 0; i < 1; i++) {
         if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
             UIGraphicsBeginImageContextWithOptions(miDelegate.window.bounds.size, NO, [UIScreen mainScreen].scale);
         } else {
@@ -272,5 +273,11 @@
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     recognizer.scale = 1;
     
+    
+}
+
+- (IBAction)done:(id)sender{
+    
+    [self dismissModalViewControllerAnimated:YES];
 }
 @end

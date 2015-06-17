@@ -85,7 +85,7 @@
 - (IBAction)registrarse:(id)sender {
     
     
-    NSString *strURl = [NSString stringWithFormat:@"http://192.168.1.39:8888/user/registro_datos.php?nombre=%@&apellido=%@&usuario=%@&phone=%@&password=%@",nombre.text,apellido.text,usuario.text,phone.text,password.text];
+    NSString *strURl = [NSString stringWithFormat:@"http://192.168.180.113:8888/user/registro_datos.php?nombre=%@&apellido=%@&usuario=%@&phone=%@&password=%@",nombre.text,apellido.text,usuario.text,phone.text,password.text];
     
     
     
